@@ -18,6 +18,11 @@ class Transfer
   
   def execute_transaction
     if self.valid?
-      
+      @sender.balance -= @amount 
+      @receiver.balance += @amount 
+    else 
+      @status = rejected
+    end
+  end
   
 end
