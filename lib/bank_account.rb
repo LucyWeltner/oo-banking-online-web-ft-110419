@@ -23,4 +23,6 @@ class BankAccount
     valid
   end
   
+  def close
+  
 end
